@@ -19,7 +19,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/orders">Orders</a></li>
                 <li><a href="/cart">Cart</a></li>
-                <li><a href="/categories">Categories</a></li>
+                <li id = "btn2"><a href="/categories">Categories</a></li>
                 <!-- <li><a href="/bag">Bag</a></li> -->
                 <!-- Add more navigation links as needed -->
             </ul>
@@ -73,7 +73,7 @@
                     <p><strong>₹ ${product.price}</strong></p>
                   </div>
                   <button><a href="/add-to-cart?product=${product.name}&price=${product.price}">Add to Cart</a></button>
-                  <button><a href="/buy?product=${product.name}&price=${product.price}">Buy Now</a></button>
+                  <button id = "hello"><a href="/buy?product=${product.name}&price=${product.price}">Buy Now</a></button>
                 `;
                 productsContainer.appendChild(productElement);
               });
